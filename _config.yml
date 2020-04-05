@@ -118,7 +118,7 @@ url-pretty: "JesperJ.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-# disqus: ""
+disqus: "jjesper"
 
 # To use Facebook Comments, fill in a Facebook App ID
 # fb_comment_id: ""
@@ -139,8 +139,7 @@ staticman:
 utterances:
   repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
   issue-term: title   # Mapping between blog posts and GitHub issues
-  #theme: github-light # Utterances theme
-  theme: icy-dark # Utterances theme
+  theme: github-light # Utterances theme
   label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
 
 
