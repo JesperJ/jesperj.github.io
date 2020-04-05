@@ -16,6 +16,16 @@
 
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav navbar-right">
+
+      {%- for tag in tags_list -%}
+      <li class="navlinks-container">
+        Tags
+        <div class="navlinks-children">
+          <a href="#{{- tag -}}"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
+        </div>
+      </li>
+      {%- endfor -%}
+      
       {%- for link in site.navbar-links -%}
         {%- if link[1].first %}
           <li class="navlinks-container">
