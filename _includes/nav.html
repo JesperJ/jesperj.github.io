@@ -29,7 +29,7 @@
 
           <div class="navlinks-children">
             {%- for tag in tags_list -%}
-              <a href="tags/#{{- tag -}}">&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
+              <a href="/tags/#{{- tag -}}">&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
             {%- endfor -%}
           </div>
       </li>
