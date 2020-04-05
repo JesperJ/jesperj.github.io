@@ -25,11 +25,11 @@
       <ul class="nav navbar-nav navbar-right">
 
         <li class="navlinks-container">
-          <a class="navlinks-parent" href="javascript:void(0)">Tags</a>
+          <a class="navlinks-parent" href="javascript:void(0)">Blog tags</a>
 
           <div class="navlinks-children">
             {%- for tag in tags_list -%}
-              <a href="#{{- tag -}}">&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
+              <a href="tags/#{{- tag -}}">&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
             {%- endfor -%}
           </div>
       </li>
