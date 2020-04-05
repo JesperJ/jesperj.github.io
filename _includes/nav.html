@@ -18,15 +18,14 @@
       <ul class="nav navbar-nav navbar-right">
 
         <li class="navlinks-container">
-          Tags
-        </li>
-      {%- for tag in tags_list -%}
-        <li>
-        <div class="navlinks-children">
-          <a href="#{{- tag -}}">&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
-        </div>
+          <a class="navlinks-parent" href="javascript:void(0)">Tags</a>
+
+          <div class="navlinks-children">
+            {%- for tag in tags_list -%}
+              <a href="#{{- tag -}}">&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
+            {%- endfor -%}
+          </div>
       </li>
-      {%- endfor -%}
 
       {%- for link in site.navbar-links -%}
         {%- if link[1].first %}
